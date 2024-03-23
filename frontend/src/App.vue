@@ -1,3 +1,7 @@
+<script setup>
+  import logo from '@/assets/img/logo.svg'
+</script>
+
 <template>
   <div class="main">
     <img :src="logo" width="300" height="47" alt="VueWork" />
@@ -9,48 +13,44 @@
   </div>
 </template>
 
-<script setup>
-import logo from "@/assets/img/logo.svg";
-</script>
-
 <style lang="scss">
-@import "@/assets/scss/app.scss";
+  @import '@/assets/scss/app.scss';
 
-#app {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: $blue-600;
-  top: 0;
-  left: 0;
-}
-
-.main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $white-900;
-
-  img {
-    display: block;
-    margin: 0 auto;
+  #app {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $blue-600;
+    top: 0;
+    left: 0;
   }
 
-  h1 {
-    @include m-s36-h21;
-    text-align: center;
-    margin-bottom: 0;
-  }
+  .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white-900;
 
-  p {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-  }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
 
-  b {
-    font-size: 1.2em;
+    h1 {
+      @include m-s36-h21;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    b {
+      font-size: 1.2em;
+    }
   }
-}
 </style>
